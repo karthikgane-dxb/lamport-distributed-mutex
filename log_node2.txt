@@ -1,0 +1,13 @@
+[2025-10-28 22:52:05] [Node 2] [clock=0] RPC server started on localhost:8001
+[2025-10-28 22:52:06] [Node 2] [clock=0] Sleeping 2s before CS request 1/3
+[2025-10-28 22:52:08] [Node 2] [clock=1] Broadcasting REQUEST ts=1
+[2025-10-28 22:52:12] [Node 2] [clock=1] Error sending REQUEST to Node 1: [WinError 10061] No connection could be made because the target machine actively refused it
+[2025-10-28 22:52:16] [Node 2] [clock=1] Error sending REQUEST to Node 3: [WinError 10061] No connection could be made because the target machine actively refused it
+[2025-10-28 22:52:16] [Node 2] [clock=1] Waiting for all REPLIES and queue order...
+[2025-10-28 22:52:48] [Node 2] [clock=2] Received REQUEST from Node 3 (ts=1) Queue=[(1, '2'), (1, '3')]
+[2025-10-28 22:52:48] [Node 2] [clock=2] Deferred REPLY to Node 3
+[2025-10-28 22:53:05] [Node 2] [clock=3] Received REQUEST from Node 1 (ts=1) Queue=[(1, '1'), (1, '2'), (1, '3')]
+[2025-10-28 22:53:07] [Node 2] [clock=3] Sent REPLY to Node 1
+[2025-10-28 22:53:15] [Node 2] [clock=7] Received RELEASE from Node 1. Queue=[(1, '2'), (1, '3')]
+[2025-10-28 22:53:24] [Node 2] [clock=8] Received REQUEST from Node 1 (ts=7) Queue=[(1, '2'), (1, '3'), (7, '1')]
+[2025-10-28 22:53:24] [Node 2] [clock=8] Deferred REPLY to Node 1

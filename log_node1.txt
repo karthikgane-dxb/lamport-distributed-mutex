@@ -1,0 +1,12 @@
+[2025-10-28 22:52:57] [Node 1] [clock=0] RPC server started on localhost:8000
+[2025-10-28 22:52:58] [Node 1] [clock=0] Sleeping 5s before CS request 1/3
+[2025-10-28 22:53:03] [Node 1] [clock=1] Broadcasting REQUEST ts=1
+[2025-10-28 22:53:07] [Node 1] [clock=4] Received REPLY from Node 2. Replies={'2'}
+[2025-10-28 22:53:11] [Node 1] [clock=5] Received REPLY from Node 3. Replies={'2', '3'}
+[2025-10-28 22:53:11] [Node 1] [clock=5] Waiting for all REPLIES and queue order...
+[2025-10-28 22:53:11] [Node 1] [clock=5] >>> ENTERING CRITICAL SECTION <<<
+[2025-10-28 22:53:13] [Node 1] [clock=5] <<< EXITING CRITICAL SECTION >>>
+[2025-10-28 22:53:13] [Node 1] [clock=6] Broadcasting RELEASE ts=6
+[2025-10-28 22:53:18] [Node 1] [clock=6] Sleeping 4s before CS request 2/3
+[2025-10-28 22:53:22] [Node 1] [clock=7] Broadcasting REQUEST ts=7
+[2025-10-28 22:53:26] [Node 1] [clock=7] Waiting for all REPLIES and queue order...
